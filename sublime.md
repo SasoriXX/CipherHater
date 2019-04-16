@@ -41,7 +41,7 @@ Instead of "Free World User" you can enter your name or any text.
  
 #### How to patch the executable? Copy/Paste this script and run:
 
-- ```$ sudo chmod +x sublime_patch.sh```
+- ```$ sudo chmod +x ./sublime_patch.sh```
 - ```$ sudo ./sublime_patch.sh```
 - Copy license key from console (can be copied with the mouse)
 
