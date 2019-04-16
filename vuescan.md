@@ -47,7 +47,7 @@ $ tar zxf vuex6496.tgz
  
 #### How to patch the executable? Copy/Paste this script and run:
 
-- ```$ sudo chmod +x vuescan_patch.sh```
+- ```$ sudo chmod +x ./vuescan_patch.sh```
 - ```$ sudo ./vuescan_patch.sh```
   
 ---
