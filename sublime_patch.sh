@@ -3,7 +3,7 @@
 
 #############################################################################################
 #
-# Brief: Script for patching Sublime Text 3 Build 3207 and Sublime Merge Build 1111
+# Brief: Script for patching Sublime Text 3 Build 3207 and Sublime Merge Build 1112
 # Author: cipherhater <https://gist.github.com/cipherhater>
 # Copyright: © 2019 CipherHater, Inc.
 #
@@ -38,7 +38,7 @@ echo -en ${RESTORE}
 ### Supported version #######################################################################
 
 versions_text='3207'
-versions_merge='1111'
+versions_merge='1112'
 
 support_versions=${versions_text}${versions_merge}
 
@@ -248,10 +248,10 @@ case $v in
 	patch sublime_text $st3207
 	;;
 
-    "1111" )
-	sm1111='
-	0x30F0FE \x02 0x30F13E \x90 0x30F13F \x90 0x30F156 \xEB 0x30F8CA \x90 0x30F8CB \x90'
-	patch sublime_merge $sm1111
+    "1112" )
+	sm1112='
+	0x310102 \x02 0x310142 \x90 0x310143 \x90 0x31015A \xEB 0x3108CE \x90 0x3108CF \x90'
+	patch sublime_merge $sm1112
 	;;
 
 	* )

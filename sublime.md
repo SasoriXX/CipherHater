@@ -7,7 +7,7 @@ permalink: sublime/
 
 <center>
 	<p><b>
-		Only for builds 3207 and 1111 and only for Linux x86_64
+		Only for builds 3207 and 1112 and only for Linux x86_64
 	</b></p>
 </center>
 
@@ -30,7 +30,7 @@ Instead of "Free World User" you can enter your name or any text.
 
 ![BIG](images/3207.jpg)
 
-![BIG](images/1111.jpg)
+![BIG](images/1112.jpg)
 
 ---
 
