@@ -3,7 +3,7 @@
 
 #############################################################################################
 #
-# Brief: Script for patching Sublime Text 3 Build 3207 and Sublime Merge Build 1112
+# Brief: Script for patching Sublime Text 3 Build 3207/3208 and Sublime Merge Build 1112
 # Author: cipherhater <https://gist.github.com/cipherhater>
 # Copyright: © 2019 CipherHater, Inc.
 #
@@ -37,7 +37,7 @@ echo -en ${RESTORE}
 ##
 ### Supported version #######################################################################
 
-versions_text='3207'
+versions_text='3207 3208'
 versions_merge='1112'
 
 support_versions=${versions_text}${versions_merge}
@@ -248,6 +248,14 @@ case $v in
 	patch sublime_text $st3207
 	;;
 
+    "3208" )
+	st3208='
+	0x313AA5 \xEB 0x31C9C0 \xEB 0x31C9C1 \x00 0x31C9D5 \xEB 0x31D6B7 \xEB 0x31D6B8 \x04 0x31D6B9 \x90 0x31D6BA \x90
+	0x31D6BB \x90 0x31D6BC \x90 0x31D6EC \xEB 0x31D6ED \x04 0x31D6EE \x90 0x31D6EF \x90 0x31D6F0 \x90 0x31D6F1 \x90
+	0x31DE77 \xE9 0x31DE78 \xF9 0x31DE79 \x00 0x31DE7C \x90'
+	patch sublime_text $st3208
+	;;
+
     "1112" )
 	sm1112='
 	0x310102 \x02 0x310142 \x90 0x310143 \x90 0x31015A \xEB 0x3108CE \x90 0x3108CF \x90'
@@ -291,7 +299,7 @@ license
 fi
 echo -en ${RESTORE}
 
-echo -en ${LGREEN} 'Congratulation!\n'
+echo -en ${LGREEN} '\nCongratulation!\n'
 echo -en ${RESTORE} '\n'
 #
 exit 0

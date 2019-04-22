@@ -3,7 +3,7 @@
 
 <center>
 	<p><b>
-		Only for builds 3207 and 1112 and only for Linux x86_64
+		Only for builds 3207/3208 and 1112 and only for Linux x86_64
 	</b></p>
 </center>
 

@@ -7,7 +7,7 @@ permalink: sublime/
 
 <center>
 	<p><b>
-		Only for builds 3207 and 1112 and only for Linux x86_64
+		Only for builds 3207/3208 and 1112 and only for Linux x86_64
 	</b></p>
 </center>
 
@@ -27,6 +27,8 @@ permalink: sublime/
 After the patch and enter the license key, the program is fully functional.
 Instead of "Free World User" you can enter your name or any text.
 ```
+
+![BIG](images/3208.jpg)
 
 ![BIG](images/3207.jpg)
 
@@ -65,9 +67,9 @@ Entries to add to /etc/hosts:
 0.0.0.0 download.sublimetext.com
 0.0.0.0 download.sublimemerge.com
 ```
- 
+
  - Ctrl + w & click Enter to save file
- 
+
 ---
 
 #### [Third Step:]()
@@ -104,7 +106,14 @@ exit 0
 #### [Fourth step:]()
 
 - Start Sublime Text/Merge program
+
+**For Sublime Text Build 3207**
+
 - Paste License key in registration window - **"Help"->"Enter License"**
+
+**For Sublime Text Build 3208**
+
+- Paste License key in registration window when starting the program
 
   `One license key for Sublime Text/Merge!`
 
