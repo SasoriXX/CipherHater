@@ -27,6 +27,20 @@
 
 ---
 
+# [Script for patching FlexBV x64](https://cipherhater.pro/flexbv/)
+
+<center>
+	<p><b>
+		Only for version R883/R985 and only for Linux x86_64
+	</b></p>
+</center>
+
+#### License key required: NO
+
+![FLEXBV](images/flexbv.jpg)
+
+---
+
 ## [Discussion and thanks here](https://gist.github.com/cipherhater/4e75d4e4551db171de03e9618456a7ea)
 
 <center>

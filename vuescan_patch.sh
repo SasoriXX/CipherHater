@@ -82,16 +82,16 @@ else
 
 	# Trim trailing "/"
 	p=${p%/}
-
-	echo -en ${RED} '\n'
-	read -p 'Backup VueScan 9 binary? [y/n]: ' bt
-	if [ -n $bt ] && [ $bt != "n" ]; then
-	    # Backup VueScan
-	    echo -en ${GREEN} '\nRunning backup: copy "vuescan" to "vuescan.orig" ...\n'
-	    cp -i "$p/vuescan" "$p/vuescan.orig"
-	    echo
-	fi
 fi
+
+echo -en ${RED} '\n'
+read -p 'Backup VueScan 9 binary? [y/n]: ' bt
+    if [ -n $bt ] && [ $bt != "n" ]; then
+	# Backup VueScan
+	echo -en ${GREEN} '\nRunning backup: copy "vuescan" to "vuescan.orig" ...\n'
+	cp -i "$p/vuescan" "$p/vuescan.orig"
+	echo
+    fi
 echo -en ${RESTORE}
 }
 
