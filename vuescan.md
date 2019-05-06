@@ -7,7 +7,7 @@ permalink: vuescan/
 
 <center>
 	<p><b>
-		Only for version v9.6.38 and only for Linux x86_64
+		Only for version v9.6.38/v9.6.39 and only for Linux x86_64
 	</b></p>
 </center>
 
@@ -33,12 +33,14 @@ licenses when purchasing the program.
  
 - [DOWNLOAD MAGIC SCRIPT](https://raw.githubusercontent.com/cipherhater/CipherHater/master/vuescan_patch.sh)
 
-- [DOWNLOAD ORIGINAL VUESCAN](orig/vuex6496.tgz)
+- [DOWNLOAD ORIGINAL VUESCAN v9.6.38](orig/vuex6496_9638.tgz)
 
-- Unzip the package to `/home/<user>/VueScan`:
+- [DOWNLOAD ORIGINAL VUESCAN v9.6.39](orig/vuex6496_9639.tgz)
+
+Unzip the package to `/home/<user>/VueScan`:
 
 ```
-$ tar zxf vuex6496.tgz
+$ tar zxf vuex6496_<version>.tgz
 ```
 
 - If you have previously installed this program with a license,
@@ -47,8 +49,10 @@ $ tar zxf vuex6496.tgz
  
 #### How to patch the executable? Copy/Paste this script and run:
 
-- ```$ sudo chmod +x ./vuescan_patch.sh```
-- ```$ sudo ./vuescan_patch.sh```
+```bash
+$ sudo chmod +x ./vuescan_patch.sh
+$ sudo ./vuescan_patch.sh
+```
   
 ---
 
@@ -65,7 +69,7 @@ Entries REMOVE from /etc/hosts:
  stats.hamrick.com
 ```
  
- - click Enter to save file
+Click Enter to save file
  
 **You can not add *hamrick* hosts to the hosts file!**
 
@@ -77,12 +81,14 @@ Entries REMOVE from /etc/hosts:
  
 Add IP addresses to block, iptables command:
 
- - Block Host-1 - ```$ sudo iptables -A OUTPUT -d 104.131.17.148/32 -j REJECT```
- - Block Host-2 - ```$ sudo iptables -A OUTPUT -d 162.243.24.127/32 -j REJECT```
- - Block Host-3 - ```$ sudo iptables -A OUTPUT -d 52.84.197.57/32 -j REJECT```
- - Block Host-4 - ```$ sudo iptables -A OUTPUT -d 52.84.197.136/32 -j REJECT```
- - Block Host-5 - ```$ sudo iptables -A OUTPUT -d 52.84.197.89/32 -j REJECT```
- - Block Host-6 - ```$ sudo iptables -A OUTPUT -d 52.84.197.132/32 -j REJECT```
+```bash
+$ sudo iptables -A OUTPUT -d 104.131.17.148/32 -j REJECT
+$ sudo iptables -A OUTPUT -d 162.243.24.127/32 -j REJECT
+$ sudo iptables -A OUTPUT -d 52.84.197.57/32 -j REJECT
+$ sudo iptables -A OUTPUT -d 52.84.197.136/32 -j REJECT
+$ sudo iptables -A OUTPUT -d 52.84.197.89/32 -j REJECT
+$ sudo iptables -A OUTPUT -d 52.84.197.132/32 -j REJECT
+```
 
 For Ubuntu UFW firewall script, permanent block all VueScan hosts:
 

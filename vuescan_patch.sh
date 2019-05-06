@@ -3,7 +3,7 @@
 
 #############################################################################################
 #
-# Brief: Script for patching VueScan 9 x64 (9.6.38) Linux x86_64
+# Brief: Script for patching VueScan 9 x64 (9.6.38/9.6.39) Linux x86_64
 # Author: cipherhater <https://gist.github.com/cipherhater>
 # Copyright: © 2019 CipherHater, Inc.
 #
@@ -37,7 +37,7 @@ echo -en ${RESTORE}
 ##
 ### Supported version #######################################################################
 
-version_vuescan='9.6.38'
+version_vuescan='9.6.38 9.6.39'
 
 #
 ##
@@ -45,7 +45,7 @@ version_vuescan='9.6.38'
 
 echo -en ${LYELLOW} "\nThis script supports only: \n\n \
 	${GREEN}Platform: ${WHITE} Linux x86_64\n\n \
-	${GREEN}VueScan 9 x64 (v9.6.38): ${LMAGENTA} $version_vuescan\n\n"
+	${GREEN}VueScan 9 x64 (v9.6.38/v9.6.39): ${LMAGENTA} $version_vuescan\n\n"
 
 echo -en ${RESTORE}
 
@@ -114,6 +114,24 @@ mainWork
 
 #
 ##
+### Input FlexBV build number ###############################################################
+
+echo -en ${WHITE} '\n\n'
+read -p "Please input your VueScan build manually (supported builds are [$version_vuescan]): `echo $'\n> '`" v
+
+#
+##
+#### Check FlexBV if the build is supported #################################################
+
+if [[ ! $version_vuescan = *"$v"* ]]; then
+	echo -en ${LRED} '\nError: Version '$v' is not in support list: ['$version_vuescan']\n'
+	echo -en ${RED} '\nGoodbay!\n'
+	echo -en ${RESTORE}
+	exit 1
+fi
+
+#
+##
 ### Patching binary #########################################################################
 
 function patch {
@@ -127,7 +145,7 @@ function patch {
 }
 
 echo -en ${CYAN} '\nStart patching...\n\n'
-case $version_vuescan in
+case $v in
     "9.6.38" )
 	vs9638='
 	0x03D78B \x01 0x04B7D2 \x90 0x04B7D3 \x90 0x04B7D4 \x90 0x04B7D5 \x90 0x04B7D6 \x90 0x04B7D7 \x90 0x04B803 \x00
@@ -158,6 +176,37 @@ case $version_vuescan in
 	0x09E633 \x90 0x09E748 \x90 0x09E749 \x90 0x09EFE2 \xEB 0x0A1940 \xC3 0x0A1941 \x90 0x0A1942 \x90 0x0A1943 \x90
 	0x0A1944 \x90'
 	patch vuescan $vs9638
+	;;
+
+    "9.6.39" )
+	vs9639='
+	0x03D5FB \x01 0x04B632 \x90 0x04B633 \x90 0x04B634 \x90 0x04B635 \x90 0x04B636 \x90 0x04B637 \x90 0x04B663 \x00
+	0x04D7F7 \x90 0x04D7F8 \x90 0x04D7F9 \x90 0x04D7FA \x90 0x04D7FB \x90 0x04D7FC \x90 0x04D7FD \x90 0x04D7FE \x90
+	0x04D7FF \x90 0x04D800 \x90 0x04D801 \x90 0x04D802 \x90 0x04D803 \x90 0x04D804 \x90 0x04D805 \x90 0x04D806 \x90
+	0x04D807 \x90 0x04D808 \x90 0x04D809 \x90 0x04E0A7 \x90 0x04E0A8 \x90 0x04E0A9 \x90 0x04E0AA \x90 0x04E0AB \x90
+	0x04E0AC \x90 0x072DC6 \x90 0x072DC7 \x90 0x072DC8 \x90 0x072DC9 \x90 0x072DCA \x90 0x072DCB \x90 0x076446 \xE9
+	0x076447 \xCB 0x076448 \x07 0x076449 \x00 0x07644B \x90 0x076C18 \xE9 0x076C19 \x62 0x076C1A \xF8 0x076C1B \xFF
+	0x076C1D \x90 0x0774F0 \x90 0x0774F1 \x90 0x0774FB \x90 0x0774FC \x90 0x077505 \xEB 0x07750E \x90 0x07750F \x90
+	0x07751E \xEB 0x07755A \xEB 0x077583 \x90 0x077584 \x90 0x07758E \x90 0x07758F \x90 0x077598 \xE9 0x077599 \x9E
+	0x07759A \x00 0x07759D \x90 0x077635 \x90 0x077636 \x90 0x077637 \x90 0x077638 \x90 0x077639 \x90 0x07763A \x90
+	0x08858A \x90 0x08858B \x90 0x08858C \x90 0x08858D \x90 0x08858E \x90 0x08858F \x90 0x08B6FF \x90 0x08B700 \x90
+	0x08B701 \x90 0x08B702 \x90 0x08B703 \x90 0x08B704 \x90 0x08B705 \x90 0x08B706 \x90 0x08B707 \x90 0x08B708 \x90
+	0x08B70A \x90 0x08B70B \x90 0x08B70C \x90 0x08B70D \x90 0x08B70E \x90 0x08B70F \x90 0x08B710 \x90 0x08B711 \x90
+	0x08B712 \x90 0x08B713 \x90 0x08B714 \x90 0x08B715 \x90 0x08B716 \x90 0x08B717 \x90 0x08B718 \x90 0x08B719 \x90
+	0x08B71A \x90 0x08B71B \x90 0x08B71C \x90 0x08B71D \x90 0x08B71E \x90 0x08B71F \x90 0x08B720 \x90 0x08B721 \x90
+	0x08B722 \x90 0x08B723 \x90 0x08B724 \x90 0x08B725 \x90 0x08B726 \x90 0x08B727 \x90 0x08BA46 \xE9 0x08BA47 \xB2
+	0x08BA48 \xFC 0x08BA49 \xFF 0x08BA4B \x90 0x08BA4E \x90 0x08BA4F \x90 0x08BA50 \x90 0x08BA51 \x90 0x08BA52 \x90
+	0x08BA53 \x90 0x08BB8C \x90 0x08BB8D \x90 0x08BBA6 \x01 0x08BD56 \x90 0x08BD57 \x90 0x08BD58 \x90 0x08BD59 \x90
+	0x08BD5A \x90 0x08BD5B \x90 0x08BD6F \x90 0x08BD70 \x90 0x08BD71 \x90 0x08BD72 \x90 0x08BD73 \x90 0x08BD74 \x90
+	0x096615 \xE9 0x096616 \xAE 0x096617 \x0B 0x096618 \x00 0x09661A \x90 0x09E2F0 \xC3 0x09E3D0 \xC3 0x09E3D1 \x90
+	0x09E3D2 \x90 0x09E3D3 \x90 0x09E3D4 \x90 0x09E3E0 \xC3 0x09E3F2 \xEB 0x09E406 \x90 0x09E407 \x90 0x09E424 \x90
+	0x09E425 \x90 0x09E42B \x90 0x09E42C \x90 0x09E44F \x90 0x09E450 \x90 0x09E458 \x90 0x09E459 \x90 0x09E45D \x90
+	0x09E45E \x90 0x09E45F \x90 0x09E460 \x90 0x09E461 \x90 0x09E462 \x90 0x09E466 \x90 0x09E467 \x90 0x09E468 \x90
+	0x09E469 \x90 0x09E46A \x90 0x09E46B \x90 0x09E470 \x90 0x09E471 \x90 0x09E472 \x90 0x09E473 \x90 0x09E474 \x90
+	0x09E475 \x90 0x09E479 \x90 0x09E47A \x90 0x09E481 \x90 0x09E482 \x90 0x09E483 \x90 0x09E484 \x90 0x09E485 \x90
+	0x09E486 \x90 0x09E4A7 \xEB 0x09E4CF \x90 0x09E4D0 \x90 0x09E620 \xC3 0x09E621 \x90 0x09E622 \x90 0x09E623 \x90
+	0x09E738 \x90 0x09E739 \x90 0x09EFD2 \xEB 0x0A1930 \xC3 0x0A1931 \x90 0x0A1932 \x90 0x0A1933 \x90 0x0A1934 \x90'
+	patch vuescan $vs9639
 	;;
 
 	* )
