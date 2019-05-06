@@ -40,9 +40,9 @@ Key: 0000000000000000000000000000000
 
 - [DOWNLOAD ORIGINAL FlexBV R985](orig/FlexBV-R985-linux.tar.gz)
 
-- [DOWNLOAD ORIGINAL FlexBV R883](orig/FlexBV-R1007-linux.tar.gz)
+- [DOWNLOAD ORIGINAL FlexBV R1007](orig/FlexBV-R1007-linux.tar.gz)
 
-- [DOWNLOAD ORIGINAL FlexBV R985](orig/FlexBV-R1020-linux.tar.gz)
+- [DOWNLOAD ORIGINAL FlexBV R1020](orig/FlexBV-R1020-linux.tar.gz)
 
 - Unzip the package to `/home/<user>`:
 
