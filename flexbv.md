@@ -49,13 +49,14 @@ Unzip the package to `/home/<user>`:
 
 ```
 $ tar zxf FlexBV-<version>-linux.tar.gz
-
 ```
  
 #### How to patch the executable? Copy/Paste this script to directory program and run:
 
-```$ sudo chmod +x ./flexbv_free.sh```
-```$ sudo ./flexbv_free.sh```
+```bash
+$ sudo chmod +x ./flexbv_free.sh
+$ sudo ./flexbv_free.sh
+```
 
 ---
 
@@ -63,7 +64,9 @@ $ tar zxf FlexBV-<version>-linux.tar.gz
 
 Add IP addresses to block, iptables command:
 
-```$ sudo iptables -A OUTPUT -d 27.50.89.128/32 -j REJECT```
+```bash
+$ sudo iptables -A OUTPUT -d 27.50.89.128/32 -j REJECT
+```
 
 For Ubuntu UFW firewall script, permanent block FlexBV hosts:
 
