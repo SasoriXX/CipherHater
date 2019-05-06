@@ -114,14 +114,14 @@ mainWork
 
 #
 ##
-### Input FlexBV build number ###############################################################
+### Input VueScan build number ###############################################################
 
 echo -en ${WHITE} '\n\n'
 read -p "Please input your VueScan build manually (supported builds are [$version_vuescan]): `echo $'\n> '`" v
 
 #
 ##
-#### Check FlexBV if the build is supported #################################################
+#### Check VueScan if the build is supported #################################################
 
 if [[ ! $version_vuescan = *"$v"* ]]; then
 	echo -en ${LRED} '\nError: Version '$v' is not in support list: ['$version_vuescan']\n'
