@@ -45,16 +45,18 @@ Instead of "Free World User" you can enter your name or any text.
  
 #### How to patch the executable? Copy/Paste this script and run:
 
-- ```$ sudo chmod +x ./sublime_patch.sh```
-- ```$ sudo ./sublime_patch.sh```
-- Copy license key from console (can be copied with the mouse)
+```$ sudo chmod +x ./sublime_patch.sh```
+```$ sudo ./sublime_patch.sh```
+
+Copy license key from console (can be copied with the mouse)
 
 ---
 
 #### [Second Step:]()
 
- - ```$ sudo nano /etc/hosts``` (you can use other text editor)
- - Copy & Paste
+```$ sudo nano /etc/hosts``` (you can use other text editor)
+
+Copy & Paste
 
 Entries to add to /etc/hosts:
 
@@ -70,7 +72,7 @@ Entries to add to /etc/hosts:
 0.0.0.0 download.sublimemerge.com
 ```
 
- - Ctrl + w & click Enter to save file
+Ctrl + w & click Enter to save file
 
 ---
 
@@ -78,10 +80,12 @@ Entries to add to /etc/hosts:
  
 Add IP addresses to block, iptables command:
 
- - Block Host-1 - ```$ sudo iptables -A OUTPUT -d 45.55.41.223/32 -j REJECT```
- - Block Host-2 - ```$ sudo iptables -A OUTPUT -d 45.55.255.55/32 -j REJECT```
- - Block Host-3 - ```$ sudo iptables -A OUTPUT -d 209.20.83.249/32 -j REJECT```
- - Block Host-4 - ```$ sudo iptables -A OUTPUT -d 104.236.0.104/32 -j REJECT```
+```bash
+$ sudo iptables -A OUTPUT -d 45.55.41.223/32 -j REJECT
+$ sudo iptables -A OUTPUT -d 45.55.255.55/32 -j REJECT
+$ sudo iptables -A OUTPUT -d 209.20.83.249/32 -j REJECT
+$ sudo iptables -A OUTPUT -d 104.236.0.104/32 -j REJECT
+```
 
 For Ubuntu UFW firewall script, permanent block all Sublime hosts:
 
