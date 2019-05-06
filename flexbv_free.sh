@@ -3,7 +3,7 @@
 
 #############################################################################################
 #
-# Brief: Script for patching FlexBV x64 R883/R985 Linux x86_64 (http://pldaniels.com)
+# Brief: Script for patching FlexBV x64 R883/R985/R1007/R1020 Linux x86_64 (pldaniels.com)
 # Author: cipherhater <https://gist.github.com/cipherhater>
 # Copyright: © 2019 CipherHater, Inc.
 #
@@ -37,7 +37,7 @@ echo -en ${RESTORE}
 ##
 ### Supported version #######################################################################
 
-version_flexbv='R883 R985'
+version_flexbv='R883 R985 R1007 R1020'
 
 #
 ##
@@ -45,7 +45,7 @@ version_flexbv='R883 R985'
 
 echo -en ${LYELLOW} "\nThis script supports only: \n\n \
 	${GREEN}Platform: ${WHITE} Linux x86_64\n\n \
-	${GREEN}FlexBV x64 R883/R985: ${LMAGENTA} $version_flexbv\n\n"
+	${GREEN}FlexBV x64 R883/R985/R1007/R1020: ${LMAGENTA} $version_flexbv\n\n"
 
 echo -en ${RESTORE}
 
@@ -161,6 +161,22 @@ case $v in
 	0x05F57B \x00 0x05F57D \x90 0x060935 \x90 0x060936 \x90 0x060937 \x90 0x060938 \x90 0x060939 \x90 0x06093A \x90
 	0x0D6451 \xE9 0x0D6452 \xE4 0x0D6453 \xE6 0x0D6454 \xFF 0x0D6456 \x90'
 	patch flexbv $vs985
+	;;
+
+    "R1007" )
+	vs1007='
+	0x03B430 \x90 0x03B431 \x90 0x03B432 \x90 0x03B433 \x90 0x03B434 \x90 0x03B435 \x90 0x03B436 \x90 0x053490 \xC3
+	0x053491 \x90 0x060026 \xE9 0x060027 \xD5 0x060028 \x02 0x060029 \x00 0x06002B \x90 0x0619C5 \x90 0x0619C6 \x90
+	0x0619C7 \x90 0x0619C8 \x90 0x0619C9 \x90 0x0619CA \x90'
+	patch flexbv $vs1007
+	;;
+
+    "R1020" )
+	vs1020='
+	0x03B950 \x90 0x03B951 \x90 0x03B952 \x90 0x03B953 \x90 0x03B954 \x90 0x03B955 \x90 0x03B956 \x90 0x04FC40 \xC3
+	0x04FC41 \x90 0x05CB96 \xE9 0x05CB97 \xD5 0x05CB98 \x02 0x05CB99 \x00 0x05CB9B \x90 0x05E5F5 \x90 0x05E5F6 \x90
+	0x05E5F7 \x90 0x05E5F8 \x90 0x05E5F9 \x90 0x05E5FA \x90'
+	patch flexbv $vs1020
 	;;
 
 	* )

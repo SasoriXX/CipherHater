@@ -31,7 +31,7 @@
 
 <center>
 	<p><b>
-		Only for version R883/R985 and only for Linux x86_64
+		Only for version R883/R985/R1007/R1020 and only for Linux x86_64
 	</b></p>
 </center>
 
