@@ -3,7 +3,7 @@
 
 #############################################################################################
 #
-# Brief: Script for patching Sublime Text 3 Build 3207/3208 and Sublime Merge Build 1107/1112
+# Brief: Script for patching Sublime Text 3 and Sublime Merge
 # Author: cipherhater <https://gist.github.com/cipherhater>
 # Copyright: © 2019 CipherHater, Inc.
 #

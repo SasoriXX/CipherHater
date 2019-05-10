@@ -3,7 +3,7 @@
 
 #############################################################################################
 #
-# Brief: Script for patching VueScan 9 x64 (9.6.38/9.6.39) Linux x86_64
+# Brief: Script for patching VueScan 9 x64 Linux x86_64
 # Author: cipherhater <https://gist.github.com/cipherhater>
 # Copyright: © 2019 CipherHater, Inc.
 #

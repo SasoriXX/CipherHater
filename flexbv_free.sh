@@ -3,7 +3,7 @@
 
 #############################################################################################
 #
-# Brief: Script for patching FlexBV x64 R883/R985/R1007/R1020 Linux x86_64 (pldaniels.com)
+# Brief: Script for patching FlexBV x64 Linux x86_64 (pldaniels.com)
 # Author: cipherhater <https://gist.github.com/cipherhater>
 # Copyright: © 2019 CipherHater, Inc.
 #
