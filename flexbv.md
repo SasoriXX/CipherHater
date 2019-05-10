@@ -7,7 +7,7 @@ permalink: flexbv/
 
 <center>
 	<p><b>
-		Only for version R883/R985/R1007/R1020 and only for Linux x86_64
+		Only for version R883/R985/R1007/R1020/R1024 and only for Linux x86_64
 	</b></p>
 </center>
 
@@ -43,6 +43,8 @@ Key: 0000000000000000000000000000000
 - [DOWNLOAD ORIGINAL FlexBV R1007](orig/FlexBV-R1007-linux.tar.gz)
 
 - [DOWNLOAD ORIGINAL FlexBV R1020](orig/FlexBV-R1020-linux.tar.gz)
+
+- [DOWNLOAD ORIGINAL FlexBV R1020](orig/FlexBV-R1024-linux.tar.gz)
 
 
 Unzip the package to `/home/<user>`:
