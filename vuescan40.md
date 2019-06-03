@@ -76,45 +76,14 @@ Click Enter to save file
 
 #### [Third Step:]()
  
-Add IP addresses to block, iptables command:
-
 ```bash
-$ sudo iptables -A OUTPUT -d 104.131.17.148/32 -j REJECT
-$ sudo iptables -A OUTPUT -d 162.243.24.127/32 -j REJECT
-$ sudo iptables -A OUTPUT -d 52.84.197.57/32 -j REJECT
-$ sudo iptables -A OUTPUT -d 52.84.197.136/32 -j REJECT
-$ sudo iptables -A OUTPUT -d 52.84.197.89/32 -j REJECT
-$ sudo iptables -A OUTPUT -d 52.84.197.132/32 -j REJECT
+$ sudo apt install firejail
 ```
 
-For Ubuntu UFW firewall script, permanent block all VueScan hosts:
+ **Start VueScan command**
 
 ```bash
-#!/bin/bash
-#
-sudo ufw insert 1 deny out to 104.131.17.148/32 comment 'VUESCAN-1'
-sudo ufw insert 2 deny in to 104.131.17.148/32 comment 'VUESCAN-1'
-#
-sudo ufw insert 3 deny out to 162.243.24.127/32 comment 'VUESCAN-2'
-sudo ufw insert 4 deny in to 162.243.24.127/32 comment 'VUESCAN-2'
-#
-sudo ufw insert 5 deny out to 52.84.197.57/32 comment 'VUESCAN-3'
-sudo ufw insert 6 deny in to 52.84.197.57/32 comment 'VUESCAN-3'
-#
-sudo ufw insert 7 deny out to 52.84.197.136/32 comment 'VUESCAN-4'
-sudo ufw insert 8 deny in to 52.84.197.136/32 comment 'VUESCAN-4'
-#
-sudo ufw insert 9 deny out to 52.84.197.89/32 comment 'VUESCAN-5'
-sudo ufw insert 10 deny in to 52.84.197.89/32 comment 'VUESCAN-5'
-#
-sudo ufw insert 11 deny out to 52.84.197.132/32 comment 'VUESCAN-6'
-sudo ufw insert 12 deny in to 52.84.197.132/32 comment 'VUESCAN-6'
-#
-sudo apt install iptables-persistent
-sudo dpkg-reconfigure iptables-persistent
-sudo ufw status numbered verbose
-#
-exit 0
+$ firejail --dns=10.10.10.10  ~/VueScan/vuescan
 ```
 
 ---
