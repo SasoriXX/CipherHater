@@ -38,7 +38,7 @@ echo -en ${RESTORE}
 ### Supported version #######################################################################
 
 versions_text='3207 3208'
-versions_merge='1107 1112'
+versions_merge='1107 1112 1116'
 
 support_versions=${versions_text}${versions_merge}
 
@@ -266,6 +266,12 @@ case $v in
 	sm1112='
 	0x310102 \x02 0x310142 \x90 0x310143 \x90 0x31015A \xEB 0x3108CE \x90 0x3108CF \x90'
 	patch sublime_merge $sm1112
+	;;
+
+    "1116" )
+	sm1116='
+	0x3111DA \x90 0x3111DB \x90 0x3111F2 \xEB'
+	patch sublime_merge $sm1116
 	;;
 
 	* )
