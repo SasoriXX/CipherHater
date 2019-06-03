@@ -37,7 +37,7 @@ echo -en ${RESTORE}
 ##
 ### Supported version #######################################################################
 
-version_flexbv='R883 R985 R1007 R1020 R1024'
+version_flexbv='R883 R985 R1007 R1020 R1024 R1060'
 
 #
 ##
@@ -45,7 +45,7 @@ version_flexbv='R883 R985 R1007 R1020 R1024'
 
 echo -en ${LYELLOW} "\nThis script supports only: \n\n \
 	${GREEN}Platform: ${WHITE} Linux x86_64\n\n \
-	${GREEN}FlexBV x64 R883/R985/R1007/R1020/R1024: ${LMAGENTA} $version_flexbv\n\n"
+	${GREEN}FlexBV x64 R883/R985/R1007/R1020/R1024/R1060: ${LMAGENTA} $version_flexbv\n\n"
 
 echo -en ${RESTORE}
 
@@ -185,6 +185,14 @@ case $v in
 	0x050B91 \x90 0x061C56 \xE9 0x061C57 \xC5 0x061C58 \x02 0x061C59 \x00 0x061C5B \x90 0x0636A5 \x90 0x0636A6 \x90
 	0x0636A7 \x90 0x0636A8 \x90 0x0636A9 \x90 0x0636AA \x90'
 	patch flexbv $vs1024
+	;;
+
+    "R1060" )
+	vs1060='
+	0x03D750 \x90 0x03D751 \x90 0x03D752 \x90 0x03D753 \x90 0x03D754 \x90 0x03D755 \x90 0x03D756 \x90 0x051F80 \xC3
+	0x051F81 \x90 0x063346 \xE9 0x063347 \xC5 0x063348 \x02 0x063349 \x00 0x06334B \x90 0x064D75 \x90 0x064D76 \x90
+	0x064D77 \x90 0x064D78 \x90 0x064D79 \x90 0x064D7A \x90'
+	patch flexbv $vs1060
 	;;
 
 	* )

@@ -45,7 +45,7 @@
 
 <center>
 	<p><b>
-		Only for version R883/R985/R1007/R1020/R1024 and only for Linux x86_64
+		Only for version R883/R985/R1007/R1020/R1024/R1060 and only for Linux x86_64
 	</b></p>
 </center>
 
