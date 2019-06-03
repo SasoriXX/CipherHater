@@ -13,11 +13,25 @@
 
 ---
 
+# [Valid license key for VueScan 9 x64](https://cipherhater.pro/vuescan40/)
+
+<center>
+	<p><b>
+		For version v9.6.38/39/40 and only for Linux x86_64
+	</b></p>
+</center>
+
+#### License key required: YES
+
+![VUESCAN](images/vuescan_40.jpg)
+
+---
+
 # [Script for patching VueScan 9 x64](https://cipherhater.pro/vuescan/)
 
 <center>
 	<p><b>
-		Only for version v9.6.38/v9.6.39 and only for Linux x86_64
+		Only for version v9.6.38/39 and only for Linux x86_64
 	</b></p>
 </center>
 

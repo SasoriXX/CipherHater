@@ -46,14 +46,14 @@ $ tar zxf vuex6496_<version>.tgz
 - If you have previously installed this program with a license,
   **remove the file** `/home/<user>/.vuescanrc`
 
- 
+
 #### How to patch the executable? Copy/Paste this script and run:
 
 ```bash
 $ sudo chmod +x ./vuescan_patch.sh
 $ sudo ./vuescan_patch.sh
 ```
-  
+
 ---
 
 #### [Second Step:]()
@@ -78,7 +78,7 @@ Click Enter to save file
 ---
 
 #### [Third Step:]()
- 
+
 Add IP addresses to block, iptables command:
 
 ```bash
