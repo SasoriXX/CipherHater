@@ -29,9 +29,11 @@ permalink: vuescan40/
 - [DOWNLOAD LICENSE FILE 2](orig/license2/vuescanrc)
 
 
-- copy file ```vuescanrc``` to path ```/home/user```
-and rename to name ```.vuescanrc```
+- If you have previously installed this program with a license,
+  **remove the file** `/home/<user>/.vuescanrc`
 
+- Copy file `vuescanrc` to path `/home/<user>`
+  and rename to name `.vuescanrc`
 
 ---
 
@@ -48,9 +50,6 @@ Unzip the package to `/home/<user>/VueScan`:
 ```
 $ tar zxf vuex6496_<version>.tgz
 ```
-
-- If you have previously installed this program with a license,
-  **remove the file** `/home/<user>/.vuescanrc`
 
 ---
 
