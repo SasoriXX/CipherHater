@@ -29,8 +29,8 @@ permalink: vuescan40/
 - [DOWNLOAD LICENSE FILE 2](orig/license2/vuescanrc)
 
 
-- copy file ```vuescanrc``` to path /home/<user>
-and rename to name **.vuescanrc**
+- copy file ```vuescanrc``` to path ```/home/user```
+and rename to name ```.vuescanrc```
 
 
 ---
