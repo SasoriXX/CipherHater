@@ -3,15 +3,15 @@ title: "VueScan"
 permalink: vuescan/
 ---
 
-# [Script for patching VueScan 9 x64]()
+# [License key set and script for patching VueScan 9 x64]()
 
 <center>
 	<p><b>
-		Only for version v9.6.38/v9.6.39 and only for Linux x86_64
+		For version v9.6.41 and only for Linux x86_64
 	</b></p>
 </center>
 
-#### License key required: NO
+#### License key required: YES
 
 ---
 
@@ -20,32 +20,29 @@ permalink: vuescan/
 
 ## [Detailed explanation]()
 
-```
-Since now the license key is not needed and is not used by the program, 
-it is not possible to send scanned images the e-mail via the VueScan
-interface, due to the not present of the sender's address that is in the
-licenses when purchasing the program.
-```
+
+**License key set for 9.6.41 Professional**
+
+
+- [DOWNLOAD LICENSE KEY SET](orig/license.txt)
+
+- If you have previously installed this program with a license,
+  **remove the file** `/home/<user>/.vuescanrc`
 
 ---
 
 #### [First Step:]()
- 
+
+
 - [DOWNLOAD MAGIC SCRIPT](https://raw.githubusercontent.com/cipherhater/CipherHater/master/vuescan_patch.sh)
 
-- [DOWNLOAD ORIGINAL VUESCAN v9.6.38](orig/vuex6496_9638.tgz)
-
-- [DOWNLOAD ORIGINAL VUESCAN v9.6.39](orig/vuex6496_9639.tgz)
+- [DOWNLOAD ORIGINAL VUESCAN v9.6.41](orig/vuex6496_9641.tgz)
 
 Unzip the package to `/home/<user>/VueScan`:
 
 ```
 $ tar zxf vuex6496_<version>.tgz
 ```
-
-- If you have previously installed this program with a license,
-  **remove the file** `/home/<user>/.vuescanrc`
-
 
 #### How to patch the executable? Copy/Paste this script and run:
 
@@ -78,8 +75,7 @@ Click Enter to save file
 ---
 
 #### [Third Step:]()
-
-
+ 
 ```bash
 $ sudo apt install firejail
 ```
@@ -93,6 +89,9 @@ $ firejail --dns=10.10.10.10  ~/VueScan/vuescan
 ---
 
  Run VueScan & appreciate the magic ^^
+
+- Paste License data in registration window
+
 
 ## [Discussion and thanks here](https://gist.github.com/cipherhater/4e75d4e4551db171de03e9618456a7ea)
 
