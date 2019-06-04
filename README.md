@@ -13,7 +13,7 @@
 
 ---
 
-# [License key set and script for patching VueScan 9 x64](https://cipherhater.pro/vuescan/)
+# [License key and script for patching VueScan 9 x64](https://cipherhater.pro/vuescan/)
 
 <center>
 	<p><b>

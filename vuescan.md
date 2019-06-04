@@ -3,7 +3,7 @@ title: "VueScan"
 permalink: vuescan/
 ---
 
-# [License key set and script for patching VueScan 9 x64]()
+# [License key and script for patching VueScan 9 x64]()
 
 <center>
 	<p><b>
