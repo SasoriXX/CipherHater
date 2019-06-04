@@ -44,11 +44,13 @@ Unzip the package to `/home/<user>/VueScan`:
 $ tar zxf vuex6496_<version>.tgz
 ```
 
-#### How to patch the executable? Copy/Paste this script and run:
+#### How to patch the executable? 
+
+- Copy/Paste this script to `/home/<user>/VueScan` and run script:
 
 ```bash
-$ sudo chmod +x ./vuescan_patch.sh
-$ sudo ./vuescan_patch.sh
+$ chmod +x ./vuescan_patch.sh
+$ ./vuescan_patch.sh
 ```
 
 ---
@@ -84,6 +86,16 @@ $ sudo apt install firejail
 
 ```bash
 $ firejail --dns=10.10.10.10  ~/VueScan/vuescan
+```
+
+ - Start VueScan script:
+
+```bash
+#!/bin/bash
+#
+firejail --dns=10.10.10.10  ~/VueScan/vuescan
+#
+exit 0
 ```
 
 ---
