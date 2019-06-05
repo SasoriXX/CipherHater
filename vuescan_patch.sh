@@ -37,7 +37,7 @@ echo -en ${RESTORE}
 ##
 ### Supported version #######################################################################
 
-version_vuescan='9.6.41'
+version_vuescan='9.6.42'
 
 #
 ##
@@ -45,7 +45,7 @@ version_vuescan='9.6.41'
 
 echo -en ${LYELLOW} "\nThis script supports only: \n\n \
 	${GREEN}Platform: ${WHITE} Linux x86_64\n\n \
-	${GREEN}VueScan 9 x64 (v9.6.41): ${LMAGENTA} $version_vuescan\n\n"
+	${GREEN}VueScan 9 x64 (v9.6.42): ${LMAGENTA} $version_vuescan\n\n"
 
 echo -en ${RESTORE}
 
@@ -146,8 +146,8 @@ function patch {
 
 echo -en ${CYAN} '\nStart patching...\n\n'
 case $v in
-    "9.6.41" )
-	vs9641='
+    "9.6.42" )
+	vs9642='
 	0x07B6D2 \xEB 0x0B0D9E \x90 0x0B0D9F \x90 0x0B0DA0 \x90 0x0B0DA1 \x90 0x0B0DA2 \x90 0x0B0DA3 \x90 0x0B0DB5 \x90
 	0x0B0DB6 \x90 0x0B0DB7 \x90 0x0B0DB8 \x90 0x0B0DB9 \x90 0x0B0DBA \x90 0x0B0DCC \x90 0x0B0DCD \x90 0x0B0DCE \x90
 	0x0B0DCF \x90 0x0B0DD0 \x90 0x0B0DD1 \x90 0x0B0DE3 \x90 0x0B0DE4 \x90 0x0B0DE5 \x90 0x0B0DE6 \x90 0x0B0DE7 \x90
@@ -158,7 +158,7 @@ case $v in
 	0x0B0E6E \x90 0x0B0E6F \x90 0x0B0E70 \x90 0x0B0E71 \x90 0x0B0E72 \x90 0x0B0E84 \x90 0x0B0E85 \x90 0x0B0E86 \x90
 	0x0B0E87 \x90 0x0B0E88 \x90 0x0B0E89 \x90 0x0B0E9B \x90 0x0B0E9C \x90 0x0B0E9D \x90 0x0B0E9E \x90 0x0B0E9F \x90
 	0x0B0EA0 \x90 0x0B0FD4 \xEB'
-	patch vuescan $vs9641
+	patch vuescan $vs9642
 	;;
 
 	* )

@@ -7,7 +7,7 @@ permalink: vuescan/
 
 <center>
 	<p><b>
-		For version v9.6.41 and only for Linux x86_64
+		For version v9.6.42 and only for Linux x86_64
 	</b></p>
 </center>
 
@@ -21,7 +21,7 @@ permalink: vuescan/
 ## [Detailed explanation]()
 
 
-**License key set for 9.6.41 Professional**
+**License key set for 9.6.42 Professional**
 
 
 - [DOWNLOAD LICENSE KEY SET](orig/license.txt)
@@ -36,7 +36,7 @@ permalink: vuescan/
 
 - [DOWNLOAD MAGIC SCRIPT](https://raw.githubusercontent.com/cipherhater/CipherHater/master/vuescan_patch.sh)
 
-- [DOWNLOAD ORIGINAL VUESCAN v9.6.41](orig/vuex6496_9641.tgz)
+- [DOWNLOAD ORIGINAL VUESCAN v9.6.42](orig/vuex6496_9642.tgz)
 
 Unzip the package to `/home/<user>/VueScan`:
 

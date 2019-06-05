@@ -17,7 +17,7 @@
 
 <center>
 	<p><b>
-		Only for version v9.6.41 and only for Linux x86_64
+		Only for version v9.6.42 and only for Linux x86_64
 	</b></p>
 </center>
 
