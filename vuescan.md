@@ -77,33 +77,18 @@ Click Enter to save file
 ---
 
 #### [Third Step:]()
- 
-```bash
-$ sudo apt install firejail
-```
 
+ Run VueScan & appreciate the magic ^^
+ 
  **Start VueScan command**
 
 ```bash
-$ firejail --dns=10.10.10.10  ~/VueScan/vuescan
+$ ~/VueScan/vuescan
 ```
-
- - Start VueScan script:
-
-```bash
-#!/bin/bash
-#
-firejail --dns=10.10.10.10  ~/VueScan/vuescan
-#
-exit 0
-```
-
----
-
- Run VueScan & appreciate the magic ^^
 
 - Paste License data in registration window
 
+---
 
 ## [Discussion and thanks here](https://gist.github.com/cipherhater/4e75d4e4551db171de03e9618456a7ea)
 
