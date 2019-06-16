@@ -37,7 +37,7 @@ echo -en ${RESTORE}
 ##
 ### Supported version #######################################################################
 
-version_vuescan='9.6.42'
+version_vuescan='9.6.42 9.6.43'
 
 #
 ##
@@ -45,7 +45,7 @@ version_vuescan='9.6.42'
 
 echo -en ${LYELLOW} "\nThis script supports only: \n\n \
 	${GREEN}Platform: ${WHITE} Linux x86_64\n\n \
-	${GREEN}VueScan 9 x64 (v9.6.42): ${LMAGENTA} $version_vuescan\n\n"
+	${GREEN}VueScan 9 x64 (v9.6.42/43): ${LMAGENTA} $version_vuescan\n\n"
 
 echo -en ${RESTORE}
 
@@ -159,6 +159,21 @@ case $v in
 	0x0B0E86 \x90 0x0B0E87 \x90 0x0B0E88 \x90 0x0B0E89 \x90 0x0B0E9B \x90 0x0B0E9C \x90 0x0B0E9D \x90 0x0B0E9E \x90
 	0x0B0E9F \x90 0x0B0EA0 \x90 0x0B0FD4 \xEB'
 	patch vuescan $vs9642
+	;;
+
+    "9.6.43" )
+	vs9643='
+	0x07B6D2 \xEB 0x0A56C0 \xC3 0x0B0D7E \x90 0x0B0D7F \x90 0x0B0D80 \x90 0x0B0D81 \x90 0x0B0D82 \x90 0x0B0D83 \x90
+	0x0B0D95 \x90 0x0B0D96 \x90 0x0B0D97 \x90 0x0B0D98 \x90 0x0B0D99 \x90 0x0B0D9A \x90 0x0B0DAC \x90 0x0B0DAD \x90
+	0x0B0DAE \x90 0x0B0DAF \x90 0x0B0DB0 \x90 0x0B0DB1 \x90 0x0B0DC3 \x90 0x0B0DC4 \x90 0x0B0DC5 \x90 0x0B0DC6 \x90
+	0x0B0DC7 \x90 0x0B0DC8 \x90 0x0B0DDA \x90 0x0B0DDB \x90 0x0B0DDC \x90 0x0B0DDD \x90 0x0B0DDE \x90 0x0B0DDF \x90
+	0x0B0DF1 \x90 0x0B0DF2 \x90 0x0B0DF3 \x90 0x0B0DF4 \x90 0x0B0DF5 \x90 0x0B0DF6 \x90 0x0B0E08 \x90 0x0B0E09 \x90
+	0x0B0E0A \x90 0x0B0E0B \x90 0x0B0E0C \x90 0x0B0E0D \x90 0x0B0E1F \x90 0x0B0E20 \x90 0x0B0E21 \x90 0x0B0E22 \x90
+	0x0B0E23 \x90 0x0B0E24 \x90 0x0B0E36 \x90 0x0B0E37 \x90 0x0B0E38 \x90 0x0B0E39 \x90 0x0B0E3A \x90 0x0B0E3B \x90
+	0x0B0E4D \x90 0x0B0E4E \x90 0x0B0E4F \x90 0x0B0E50 \x90 0x0B0E51 \x90 0x0B0E52 \x90 0x0B0E64 \x90 0x0B0E65 \x90
+	0x0B0E66 \x90 0x0B0E67 \x90 0x0B0E68 \x90 0x0B0E69 \x90 0x0B0E7B \x90 0x0B0E7C \x90 0x0B0E7D \x90 0x0B0E7E \x90
+	0x0B0E7F \x90 0x0B0E80 \x90 0x0B0FB4 \xEB'
+	patch vuescan $vs9643
 	;;
 
 	* )
