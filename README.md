@@ -1,4 +1,18 @@
 
+# [Script for patching SoftMaker Office 2018](https://cipherhater.pro/softmaker/)
+
+<center>
+	<p><b>
+		Only for revision 962.0418 and only for Linux x86_64
+	</b></p>
+</center>
+
+#### SoftMaker Office license key required: NO
+
+![SOFTMAKER](images/office.jpg)
+
+---
+
 # [Script for patching Sublime Text 3, Sublime Merge](https://cipherhater.pro/sublime/)
 
 <center>
@@ -9,7 +23,7 @@
 
 #### Sublime Text/Merge license key required: YES (License key in patch, you can enter your name!)
 
-![BIG](images/big.jpg)
+![SUBLIME](images/big.jpg)
 
 ---
 
