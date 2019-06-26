@@ -39,6 +39,10 @@ $ sudo gdebi ./softmaker-office-2018_962-01_amd64.deb
 
 #### How to patch the executable? 
 
+Before applying the patch, start TextMaker (or PlanMaker, Presentations) and click the "Trial Mode" button in the request form.
+Trial mode will be deactivated after applying the patch.
+
+
 - Copy/Paste this script to `/usr/share/office2018` and run script:
 
 ```bash
