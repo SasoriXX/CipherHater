@@ -28,7 +28,7 @@ permalink: softmaker/
 
 - [DOWNLOAD ORIGINAL SOFTMAKER OFFICE 2018](https://www.softmaker.net/down/softmaker-office-2018_962-01_amd64.deb)
 
-- [ALTERNATIVE DOWNLOAD ORIGINAL SOFTMAKER OFFICE 2018](orig/softmaker-office-2018_962-01_amd64.deb)
+- [ALTERNATIVE DOWNLOAD ORIGINAL SOFTMAKER OFFICE 2018](https://github.com/cipherhaterteam/CipherHater/raw/master/orig/softmaker-office-2018_962-01_amd64.deb)
 
 
 Install the package:
