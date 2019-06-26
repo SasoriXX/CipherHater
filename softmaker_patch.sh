@@ -3,7 +3,7 @@
 
 #############################################################################################
 #
-# Brief: Script for patching SoftMaker (rev 962.0418) x64 Linux x86_64
+# Brief: Script for patching SoftMaker Office (rev 962.0418) x64 Linux x86_64
 # Author: cipherhater <https://gist.github.com/cipherhater>
 # Copyright: © 2019 CipherHater, Inc.
 #
@@ -170,8 +170,8 @@ echo -en ${CYAN} '\nStart patching SoftMaker Office files...\n\n'
 case $v in
     "2018" )
 	textmaker='
-	0x688350 \x90 0x688351 \x90 0x6883BD \xEB 0x6884CC \xE9 0x6884CD \xB5 0x6884CE \x00 0x6884D1 \x90 0xD9E71D \xC3
-	0xD9ED4C \xC3 0xD9EE9C \xC3'
+	0x688350 \x90 0x688351 \x90 0x6883BD \xEB 0x6884CC \xE9 0x6884CD \xB5 0x6884CE \x00 0x6884D1 \x90 0xAC9F01 \xC3
+	0xD9E71D \xC3 0xD9ED4C \xC3 0xD9EE9C \xC3'
 	patch_textmaker textmaker $textmaker
 	;;
 
@@ -184,8 +184,8 @@ esac
 case $v in
     "2018" )
 	planmaker='
-	0x4C3436 \x90 0x4C3437 \x90 0x4C34A3 \xEB 0x4C35B2 \xE9 0x4C35B3 \xB5 0x4C35B4 \x00 0x4C35B7 \x90 0xB1E63D \xC3
-	0xB1EC6C \xC3 0xB1EDBC \xC3'
+	0x4C3436 \x90 0x4C3437 \x90 0x4C34A3 \xEB 0x4C35B2 \xE9 0x4C35B3 \xB5 0x4C35B4 \x00 0x4C35B7 \x90 0x84DBF7 \xC3
+	0xB1E63D \xC3 0xB1EC6C \xC3 0xB1EDBC \xC3'
 	patch_planmaker planmaker $planmaker
 	;;
 
@@ -198,8 +198,8 @@ esac
 case $v in
     "2018" )
 	presentations='
-	0x345C88 \x90 0x345C89 \x90 0x345CF5 \xEB 0x345E04 \xE9 0x345E05 \xB5 0x345E06 \x00 0x345E09 \x90 0x978254 \xC3
-	0x978883 \xC3 0x9789D3 \xC3'
+	0x345C88 \x90 0x345C89 \x90 0x345CF5 \xEB 0x345E04 \xE9 0x345E05 \xB5 0x345E06 \x00 0x345E09 \x90 0x6A319D \xC3
+	0x978254 \xC3 0x978883 \xC3 0x9789D3 \xC3'
 	patch_presentations presentations $presentations
 	;;
 
