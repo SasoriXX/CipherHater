@@ -13,6 +13,38 @@
 
 ---
 
+# [Script for patching QCAD - 2D CAD Version 3.22.1](https://cipherhater.pro/qcad/)
+
+QCAD is a application for computer aided drafting (CAD) in two dimensions (2D).
+
+<center>
+	<p><b>
+		Only for version 3.22.1 and only for Linux x86_64
+	</b></p>
+</center>
+
+#### QCAD license key required: NO
+
+![QCAD](images/qcad.jpg)
+
+---
+
+# [Script for patching QCAD/CAM Version 3.22.1](https://cipherhater.pro/qcam/)
+
+QCAD/CAM is QCAD Professional with a CAM (Computer-Aided Manufacturing) module.
+
+<center>
+	<p><b>
+		Only for version 3.22.1 and only for Linux x86_64
+	</b></p>
+</center>
+
+#### QCAD/CAM license key required: NO
+
+![QCAM](images/qcam.jpg)
+
+---
+
 # [Script for patching Sublime Text 3, Sublime Merge](https://cipherhater.pro/sublime/)
 
 <center>

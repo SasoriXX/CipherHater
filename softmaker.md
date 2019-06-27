@@ -33,7 +33,7 @@ permalink: softmaker/
 
 Install the package:
 
-```
+```bash
 $ sudo gdebi ./softmaker-office-2018_962-01_amd64.deb
 ```
 
