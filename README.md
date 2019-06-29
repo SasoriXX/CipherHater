@@ -13,6 +13,24 @@
 
 ---
 
+# [Script for patching Autodesk EAGLE Version 9.4.2](https://cipherhater.pro/eagle/)
+
+Autodesk EAGLE is an electronic design automation (EDA) software.
+
+<center>
+	<p><b>
+		Only for version 9.4.2 and only for Linux x86_64
+	</b></p>
+</center>
+
+#### EAGLE Premium license key required: NO
+
+[![Donate with Bitcoin](https://en.cryptobadges.io/badge/small/13mzRviMxLg3HDojL7YJZajwtVLa124E8X)](https://en.cryptobadges.io/donate/13mzRviMxLg3HDojL7YJZajwtVLa124E8X)
+
+![EAGLE](images/eagle.jpg)
+
+---
+
 # [Script for patching QCAD - 2D CAD Version 3.22.1](https://cipherhater.pro/qcad/)
 
 QCAD is a application for computer aided drafting (CAD) in two dimensions (2D).
