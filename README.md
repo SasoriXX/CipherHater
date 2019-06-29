@@ -25,7 +25,6 @@ Autodesk EAGLE is an electronic design automation (EDA) software.
 
 #### EAGLE Premium license key required: NO
 
-[![Donate with Bitcoin](https://en.cryptobadges.io/badge/small/13mzRviMxLg3HDojL7YJZajwtVLa124E8X)](https://en.cryptobadges.io/donate/13mzRviMxLg3HDojL7YJZajwtVLa124E8X)
 
 ![EAGLE](images/eagle.jpg)
 
@@ -106,6 +105,8 @@ QCAD/CAM is QCAD Professional with a CAM (Computer-Aided Manufacturing) module.
 ---
 
 ## [Discussion and thanks here](https://gist.github.com/cipherhater/4e75d4e4551db171de03e9618456a7ea)
+
+[![Donate with Bitcoin](https://en.cryptobadges.io/badge/small/13mzRviMxLg3HDojL7YJZajwtVLa124E8X)](https://en.cryptobadges.io/donate/13mzRviMxLg3HDojL7YJZajwtVLa124E8X)
 
 <center>
     <p><b>
