@@ -3,7 +3,7 @@
 
 <center>
 	<p><b>
-		Only for revision 962.0418 and only for Linux x86_64
+		Only for revision 965.0629 and only for Linux x86_64
 	</b></p>
 </center>
 

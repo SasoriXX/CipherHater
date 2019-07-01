@@ -3,7 +3,7 @@
 
 #############################################################################################
 #
-# Brief: Script for patching SoftMaker Office (rev 962.0418) x64 Linux x86_64
+# Brief: Script for patching SoftMaker Office (rev 965.0629) x64 Linux x86_64
 # Author: cipherhater <https://gist.github.com/cipherhater>
 # Copyright: © 2019 CipherHater, Inc.
 #
@@ -45,7 +45,7 @@ version_SoftMaker='2018'
 
 echo -en ${LYELLOW} "\nThis script supports only: \n\n \
 	${GREEN}Platform: ${WHITE} Linux x86_64\n\n \
-	${GREEN}SoftMaker Office (rev 962.0418) x64: ${LMAGENTA} $version_SoftMaker\n\n"
+	${GREEN}SoftMaker Office (rev 965.0629) x64: ${LMAGENTA} $version_SoftMaker\n\n"
 
 echo -en ${RESTORE}
 
@@ -170,8 +170,8 @@ echo -en ${CYAN} '\nStart patching SoftMaker Office files...\n\n'
 case $v in
     "2018" )
 	textmaker='
-	0x688350 \x90 0x688351 \x90 0x6883BD \xEB 0x6884CC \xE9 0x6884CD \xB5 0x6884CE \x00 0x6884D1 \x90 0xAC9F01 \xC3
-	0xD9E71D \xC3 0xD9ED4C \xC3 0xD9EE9C \xC3'
+	0x68BD04 \x90 0x68BD05 \x90 0x68BD71 \xEB 0x68BE80 \xE9 0x68BE81 \xB5 0x68BE82 \x00 0x68BE85 \x90 0xACEDFF \xC3
+	0xDA3671 \xC3 0xDA3CA0 \xC3 0xDA3DF0 \xC3'
 	patch_textmaker textmaker $textmaker
 	;;
 
@@ -184,8 +184,8 @@ esac
 case $v in
     "2018" )
 	planmaker='
-	0x4C3436 \x90 0x4C3437 \x90 0x4C34A3 \xEB 0x4C35B2 \xE9 0x4C35B3 \xB5 0x4C35B4 \x00 0x4C35B7 \x90 0x84DBF7 \xC3
-	0xB1E63D \xC3 0xB1EC6C \xC3 0xB1EDBC \xC3'
+	0x4C704A \x90 0x4C704B \x90 0x4C70B7 \xEB 0x4C71C6 \xE9 0x4C71C7 \xB5 0x4C71C8 \x00 0x4C71CB \x90 0x856A2D \xC3
+	0xB27799 \xC3 0xB27DC8 \xC3 0xB27F18 \xC3'
 	patch_planmaker planmaker $planmaker
 	;;
 
@@ -198,8 +198,8 @@ esac
 case $v in
     "2018" )
 	presentations='
-	0x345C88 \x90 0x345C89 \x90 0x345CF5 \xEB 0x345E04 \xE9 0x345E05 \xB5 0x345E06 \x00 0x345E09 \x90 0x6A319D \xC3
-	0x978254 \xC3 0x978883 \xC3 0x9789D3 \xC3'
+	0x34801E \x90 0x34801F \x90 0x34808B \xEB 0x34819A \xE9 0x34819B \xB5 0x34819C \x00 0x34819F \x90 0x6A64F1 \xC3
+	0x97BA4E \xC3 0x97C07D \xC3 0x97C1CD \xC3'
 	patch_presentations presentations $presentations
 	;;
 

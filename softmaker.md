@@ -7,7 +7,7 @@ permalink: softmaker/
 
 <center>
 	<p><b>
-		For version revision 962.0418 and only for Linux x86_64
+		For version revision 965.0629 and only for Linux x86_64
 	</b></p>
 </center>
 
@@ -26,13 +26,13 @@ permalink: softmaker/
 
 - [DOWNLOAD MAGIC SCRIPT](https://raw.githubusercontent.com/cipherhater/CipherHater/master/softmaker_patch.sh)
 
-- [DOWNLOAD ORIGINAL SOFTMAKER OFFICE 2018](https://github.com/cipherhaterteam/CipherHater/raw/master/orig/softmaker-office-2018_962-01_amd64.deb)
+- [DOWNLOAD ORIGINAL SOFTMAKER OFFICE 2018](https://github.com/cipherhaterteam/CipherHater/raw/master/orig/softmaker-office-2018_965-01_amd64.deb)
 
 
 Install the package:
 
 ```bash
-$ sudo gdebi ./softmaker-office-2018_962-01_amd64.deb
+$ sudo gdebi ./softmaker-office-2018_965-01_amd64.deb
 ```
 
 #### How to patch the executable? 
