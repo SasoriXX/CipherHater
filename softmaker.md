@@ -26,9 +26,7 @@ permalink: softmaker/
 
 - [DOWNLOAD MAGIC SCRIPT](https://raw.githubusercontent.com/cipherhater/CipherHater/master/softmaker_patch.sh)
 
-- [DOWNLOAD ORIGINAL SOFTMAKER OFFICE 2018](https://www.softmaker.net/down/softmaker-office-2018_962-01_amd64.deb)
-
-- [ALTERNATIVE DOWNLOAD ORIGINAL SOFTMAKER OFFICE 2018](https://github.com/cipherhaterteam/CipherHater/raw/master/orig/softmaker-office-2018_962-01_amd64.deb)
+- [DOWNLOAD ORIGINAL SOFTMAKER OFFICE 2018](https://github.com/cipherhaterteam/CipherHater/raw/master/orig/softmaker-office-2018_962-01_amd64.deb)
 
 
 Install the package:

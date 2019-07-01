@@ -32,8 +32,6 @@ QCAD/CAM is QCAD Professional with a CAM (Computer-Aided Manufacturing) module.
 
 - [DOWNLOAD ORIGINAL QCAD/CAM TARBALL](https://github.com/cipherhaterteam/CipherHater/raw/master/orig/qcadcam-3.22.1-trial-linux-x86_64.tar.gz)
 
-- [DOWNLOAD FROM HOME SITE](https://qcad.org/en/download)
-
 
 Install the package:
 

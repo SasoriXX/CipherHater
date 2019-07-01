@@ -32,8 +32,6 @@ QCAD is a application for computer aided drafting (CAD) in two dimensions (2D).
 
 - [DOWNLOAD ORIGINAL QCAD TARBALL](https://github.com/cipherhaterteam/CipherHater/raw/master/orig/qcad-3.22.1-trial-linux-x86_64.tar.gz)
 
-- [DOWNLOAD FROM HOME SITE](https://qcad.org/en/download)
-
 
 Install the package:
 
