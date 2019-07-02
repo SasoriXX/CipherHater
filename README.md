@@ -80,7 +80,7 @@ QCAD/CAM is QCAD Professional with a CAM (Computer-Aided Manufacturing) module.
 
 <center>
 	<p><b>
-		Only for version v9.6.42/43 and only for Linux x86_64
+		Only for version v9.6.44 and only for Linux x86_64
 	</b></p>
 </center>
 
