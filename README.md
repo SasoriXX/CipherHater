@@ -13,6 +13,23 @@
 
 ---
 
+# [Script for patching Master PDF Editor Version 5.4.33](https://cipherhater.pro/mpdf/)
+
+Master PDF Editor is the optimal solution for editing PDF files in Linux.
+
+<center>
+	<p><b>
+		Only for version 5.4.33 and only for Linux x86_64
+	</b></p>
+</center>
+
+#### Master PDF Editor license key required: NO
+
+
+![MPDF](images/mpdf.jpg)
+
+---
+
 # [Script for patching Autodesk EAGLE Version 9.4.2](https://cipherhater.pro/eagle/)
 
 Autodesk EAGLE is an electronic design automation (EDA) software.
