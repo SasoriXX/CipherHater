@@ -13,7 +13,7 @@
 
 ---
 
-# [Script for patching Master PDF Editor Version 5.4.33](https://cipherhater.pro/mpdf/)
+# [Script for patching Master PDF Editor 5.4.33](https://cipherhater.pro/mpdf/)
 
 Master PDF Editor is the optimal solution for editing PDF files in Linux.
 
