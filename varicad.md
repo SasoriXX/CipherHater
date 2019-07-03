@@ -35,17 +35,14 @@ VariCAD - 3D / 2D CAD software for mechanical engineering.
 
 Install the package:
 
-Copy and unpack tarball for work directory:
-
 ```bash
-$ cd && mkdir VariCAD
-$ tar zxf varicad2019-en_3.00_new-distr_amd64.deb
+$ sudo gdebi ./varicad2019-en_3.00_new-distr_amd64.deb
 ``` 
 
 #### How to patch the executable? 
 
 
-- Copy/Paste this script to `/home/<user>/<workdir>` and run script:
+- Copy/Paste this script to `/opt/VariCAD/bin` and run script:
 
 ```bash
 $ chmod +x ./varicad_patch.sh
