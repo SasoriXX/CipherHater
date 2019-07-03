@@ -3,7 +3,7 @@ title: "QCAD - 2D CAD"
 permalink: qcad/
 ---
 
-# [Script for patching QCAD - 2D CAD Version 3.22.1](https://cipherhater.pro/qcad/)
+# [Script for patching QCAD - 2D CAD Version 3.22.1]()
 
 QCAD is a application for computer aided drafting (CAD) in two dimensions (2D).
 

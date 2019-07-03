@@ -3,7 +3,7 @@ title: "QCAD/CAM"
 permalink: qcam/
 ---
 
-# [Script for patching QCAD/CAM Version 3.22.1](https://cipherhater.pro/qcam/)
+# [Script for patching QCAD/CAM Version 3.22.1]()
 
 QCAD/CAM is QCAD Professional with a CAM (Computer-Aided Manufacturing) module.
 

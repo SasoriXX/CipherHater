@@ -35,15 +35,32 @@ Master PDF Editor is the optimal solution for editing PDF files in Linux.
 Autodesk EAGLE is an electronic design automation (EDA) software.
 
 <center>
-	<p><b>
-		Only for version 9.4.2 and only for Linux x86_64
-	</b></p>
+    <p><b>
+	Only for version 9.4.2 and only for Linux x86_64
+    </b></p>
 </center>
 
 #### EAGLE Premium license key required: NO
 
 
 ![EAGLE](images/eagle.jpg)
+
+---
+
+# [Script for patching VariCAD 2019-3.0 (20190621)](https://cipherhater.pro/varicad/)
+
+VariCAD - 3D/2D CAD software for mechanical engineering.
+
+<center>
+	<p><b>
+		Only for version 2019-3.0 Build 20190621 and only for Linux x86_64
+	</b></p>
+</center>
+
+#### VariCAD license key required: NO
+
+
+![VARICAD](images/varicad.jpg)
 
 ---
 

@@ -1,23 +1,23 @@
 ---
-title: "Master PDF Editor"
-permalink: mpdf/
+title: "VariCAD 2019"
+permalink: varicad/
 ---
 
-# [Script for patching Master PDF Editor 5.4.33]()
+# [Script for patching VariCAD 2019-3.0 (20190621)]()
 
-Master PDF Editor is the optimal solution for editing PDF files in Linux.
+VariCAD - 3D / 2D CAD software for mechanical engineering.
 
 <center>
 	<p><b>
-		Only for version 5.4.33 and only for Linux x86_64
+		Only for version 2019-3.0 Build 20190621 and only for Linux x86_64
 	</b></p>
 </center>
 
-#### Master PDF Editor license key required: NO
+#### VariCAD license key required: NO
 
 ---
 
-![MPDF](images/mpdf.jpg)
+![VARICAD](images/varicad.jpg)
 
 
 ## [Detailed explanation]()
@@ -26,11 +26,11 @@ Master PDF Editor is the optimal solution for editing PDF files in Linux.
 #### [First Step:]()
 
 
-- [PAY 260$ FOR RECEIVING A MAGIC SCRIPT](https://en.cryptobadges.io/donate/13mzRviMxLg3HDojL7YJZajwtVLa124E8X)
+- [PAY 535$ FOR RECEIVING A MAGIC SCRIPT](https://en.cryptobadges.io/donate/13mzRviMxLg3HDojL7YJZajwtVLa124E8X)
 
 - [Report a payment and an anonymous email address to get the script for patching](https://gist.github.com/cipherhater/4e75d4e4551db171de03e9618456a7ea)
 
-- [DOWNLOAD ORIGINAL TARBALL](https://code-industry.net/free-pdf-editor/#get)
+- [DOWNLOAD ORIGINAL TARBALL](https://www.varicad.com/en/home/)
 
 
 Install the package:
@@ -38,8 +38,8 @@ Install the package:
 Copy and unpack tarball for work directory:
 
 ```bash
-$ cd && mkdir mpdf
-$ tar zxf master-pdf-editor-5.4.33-qt5-all.amd64.tar.gz
+$ cd && mkdir VariCAD
+$ tar zxf varicad2019-en_3.00_new-distr_amd64.deb
 ``` 
 
 #### How to patch the executable? 
@@ -48,12 +48,12 @@ $ tar zxf master-pdf-editor-5.4.33-qt5-all.amd64.tar.gz
 - Copy/Paste this script to `/home/<user>/<workdir>` and run script:
 
 ```bash
-$ chmod +x ./mpdf_patch.sh
-$ ./mpdf_patch.sh
+$ chmod +x ./varicad_patch.sh
+$ ./varicad_patch.sh
 ```
 
 
- Run Master PDF Editor & appreciate the magic ^^
+ Run VariCAD 2019 & appreciate the magic ^^
  
 ---
 

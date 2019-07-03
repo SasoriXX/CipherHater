@@ -3,7 +3,7 @@ title: "Autodesk EAGLE"
 permalink: eagle/
 ---
 
-# [Script for patching Autodesk EAGLE Version 9.4.2](https://cipherhater.pro/eagle/)
+# [Script for patching Autodesk EAGLE Version 9.4.2]()
 
 Autodesk EAGLE is an electronic design automation (EDA) software.
 
